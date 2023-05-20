@@ -42,10 +42,12 @@ INSTALLED_APPS = [
     'drf_yasg',
     'rest_framework',
     #'debug_toolbar',
+    'flight',
+    'user',
 ]
 
 MIDDLEWARE = [
-    #'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -130,9 +132,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = BASE_DIR / 'static'
 
-# INTERNAL_IPS = [
-#     "127.0.0.1",
-# ]
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
 LOGGING = {
     "version": 1,
